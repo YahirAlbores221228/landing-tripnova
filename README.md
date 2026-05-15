@@ -13,7 +13,7 @@ Landing page para una agencia de viajes que ofrece paquetes turísticos nacional
 
 1. Clona el repositorio
 \```bash
-git clone https://github.com/tu-usuario/landing-tripnova.git
+git clone https://github.com/YahirAlbores221228/landing-tripnova.git
 \```
 
 2. Entra a la carpeta del proyecto
