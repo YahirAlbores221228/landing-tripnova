@@ -1,0 +1,79 @@
+{
+  "destinos": [
+    {
+      "value": "cancun",
+      "label": "Cancún, México",
+      "precioBase": 500
+    },
+    {
+      "value": "europa",
+      "label": "Circuito Cultural Europa",
+      "precioBase": 1200
+    },
+    {
+      "value": "costa-rica",
+      "label": "Aventura en Costa Rica",
+      "precioBase": 700
+    },
+    {
+      "value": "orlando",
+      "label": "Viaje Familiar Orlando",
+      "precioBase": 900
+    }
+  ],
+  "tiposViaje": [
+    {
+      "value": "basico",
+      "label": "Básico",
+      "multiplicador": 1.0,
+      "features": ["Hospedaje 3★", "Traslados compartidos"]
+    },
+    {
+      "value": "estandar",
+      "label": "Estándar",
+      "multiplicador": 1.3,
+      "features": ["Hospedaje 4★", "Desayunos incluidos", "Traslados privados"]
+    },
+    {
+      "value": "premium",
+      "label": "Premium",
+      "multiplicador": 1.6,
+      "features": ["Hospedaje 5★", "Pensión completa", "Experiencias exclusivas"]
+    }
+  ],
+  "serviciosAdicionales": [
+    {
+      "value": "traslado",
+      "label": "Traslado aeropuerto-hotel",
+      "precio": 80,
+      "priceLabel": "+$80"
+    },
+    {
+      "value": "seguro",
+      "label": "Seguro de viaje",
+      "precio": 60,
+      "priceLabel": "+$60"
+    },
+    {
+      "value": "tours",
+      "label": "Tours guiados",
+      "precio": 220,
+      "priceLabel": "+$220"
+    },
+    {
+      "value": "hospedaje",
+      "label": "Hospedaje superior",
+      "precio": 350,
+      "priceLabel": "+$350"
+    },
+    {
+      "value": "asesoria",
+      "label": "Asesoría personalizada",
+      "precio": 90,
+      "priceLabel": "+$90"
+    }
+  ],
+  "configuracionGeneral": {
+    "precioDiaExtra": 40
+  }
+}

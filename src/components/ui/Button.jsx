@@ -8,7 +8,7 @@ const Button = ({
   
   // Definimos los "temas" del botón
   const variants = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm',
+    primary: 'bg-accent text-white hover:bg-accent/90 shadow-sm',
     outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50',
     ghost: 'text-gray-600 hover:bg-gray-100'
   };
@@ -37,3 +37,5 @@ const Button = ({
     </button>
   );
 };
+
+export default Button;

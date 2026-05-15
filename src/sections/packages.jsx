@@ -15,7 +15,7 @@ const Packages = () => {
     return (
         <section className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-white">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
-                <div className="max-w-3xl text-center mb-12 lg:mb-16">
+                <div className="max-w-4xl text-center mb-12 lg:mb-16">
                     <span className="font-lato text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide">
                         Nuestros Paquetes
                     </span>

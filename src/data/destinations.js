@@ -1,40 +1,47 @@
+import cascada from "../assets/images/carousel/cascada.webp";
+import santorini from "../assets/images/carousel/santorini.webp";
+import nuevaYork from "../assets/images/carousel/nuevayork.webp";
+import bali from "../assets/images/carousel/bali.webp";
+import patagonia from "../assets/images/carousel/patagonia.webp";
+import marrakech from "../assets/images/carousel/marrakech.webp";
+
 const destinations = [
   {
     id: 1,
-    name: "Tokio",
-    country: "Japón",
-    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80"
+    name: "Cascada de Agua Azul",
+    country: "México",
+    image: cascada
   },
   {
     id: 2,
     name: "Santorini",
     country: "Grecia",
-    image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80"
+    image: santorini
   },
   {
     id: 3,
     name: "Nueva York",
     country: "EE.UU.",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80"
+    image: nuevaYork
   },
   {
     id: 4,
     name: "Bali",
     country: "Indonesia",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80"
+    image: bali
   },
   {
     id: 5,
     name: "Patagonia",
     country: "Argentina",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80"
+    image: patagonia
   },
   {
     id: 6,
     name: "Marrakech",
     country: "Marruecos",
-    image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800&q=80"
+    image: marrakech
   },
-]
+];
 
-export default destinations
+export default destinations;

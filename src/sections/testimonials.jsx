@@ -5,7 +5,7 @@ const Testimonials = () => {
     return (
         <section className="py-16 md:py-24 lg:py-32 px-4 md:px-8 bg-gray-50/50">
             <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
+                <div className="text-center mb-10 md:mb-16 max-w-4xl mx-auto">
                      <span className="font-lato text-xs sm:text-sm font-semibold text-accent uppercase tracking-wide">
                         Opiniones
                     </span>

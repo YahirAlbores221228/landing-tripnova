@@ -1,3 +1,12 @@
+import cancun from '../assets/images/packages/cancun.webp';
+import paris from '../assets/images/packages/paris.webp';
+import tour from '../assets/images/packages/tour.webp';
+import oaxaca from '../assets/images/packages/oaxaca.webp';
+import chiapas from '../assets/images/packages/chiapas.webp';
+import peru from '../assets/images/packages/peru.webp';
+import orlando from '../assets/images/packages/orlando.webp';
+import cdmx from '../assets/images/packages/cdmx.webp';
+
 const packages = [
   {
     id: 1,
@@ -8,7 +17,7 @@ const packages = [
     description: "Vive una experiencia romántica única en las playas paradisíacas de Cancún con todo incluido.",
     category: "romance",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1552074284-5e88ef1aef18?w=800&q=80"
+    image: cancun
   },
   {
     id: 2,
@@ -19,7 +28,7 @@ const packages = [
     description: "Descubre la ciudad del amor con paseos por el Sena, la Torre Eiffel y gastronomía francesa.",
     category: "romance",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80"
+    image: paris
   },
   {
     id: 3,
@@ -30,7 +39,7 @@ const packages = [
     description: "Recorre las ciudades más emblemáticas de Europa, su historia, arte y arquitectura.",
     category: "cultura",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80"
+    image: tour
   },
   {
     id: 4,
@@ -41,18 +50,18 @@ const packages = [
     description: "Sumérgete en la cultura, gastronomía y tradiciones del estado más mágico de México.",
     category: "cultura",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=800&q=80"
+    image: oaxaca
   },
   {
     id: 5,
-    name: "Aventura en Costa Rica",
-    destination: "Arenal · Monteverde",
-    duration: "8 días / 7 noches",
+    name: "Maravillas de Chiapas",
+    destination: "Cañon del Sumidero · San Cristóbal",
+    duration: "5 días / 4 noches",
     price: 1620,
-    description: "Volcán Arenal, canopy en la selva nubosa y aguas termales naturales.",
+    description: "Recorrido en lancha por el imponente Cañón del Sumidero, selva mística y pueblos mágicos.",
     category: "aventura",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=800&q=80"
+    image: chiapas
   },
   {
     id: 6,
@@ -63,7 +72,7 @@ const packages = [
     description: "Una aventura inolvidable recorriendo el Camino Inca hasta la majestuosa ciudadela.",
     category: "aventura",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800&q=80"
+    image: peru
   },
   {
     id: 7,
@@ -74,7 +83,7 @@ const packages = [
     description: "La aventura perfecta para toda la familia con acceso a los mejores parques temáticos.",
     category: "familiar",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1575931953324-fcac7094999e?w=800&q=80"
+    image: orlando
   },
   {
     id: 8,
@@ -85,8 +94,8 @@ const packages = [
     description: "Descubre la riqueza cultural, gastronómica e histórica de la capital mexicana.",
     category: "familiar",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=800&q=80"
+    image: cdmx
   },
 ]
 
-export default packages
+export default packages;

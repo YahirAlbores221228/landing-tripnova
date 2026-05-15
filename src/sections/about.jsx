@@ -1,5 +1,6 @@
 import features from "../data/features";
-import aboutimg from "../assets/hero/hero.jpg";
+import image1 from "../assets/images/about/image-1.webp";
+import image2 from "../assets/images/about/image-2.webp";
 import FeatureCard from "../components/FeatureCard";
 
 const About = () => {
@@ -8,12 +9,12 @@ const About = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                 <div className="relative h-[400px] sm:h-[500px] order-2 lg:order-1">
                     <img
-                        src={aboutimg}
+                        src={image2}
                         alt="About Us"
                         className="absolute top-0 left-0 w-[65%] h-[85%] object-cover rounded-2xl shadow-xl border-4 md:border-8 border-white z-10"
                     />
                     <img
-                        src={aboutimg}
+                        src={image1}
                         alt="About Us"
                         className="absolute bottom-0 right-0 w-[65%] h-[85%] object-cover rounded-2xl shadow-xl border-4 md:border-8 border-white z-0"
                     />
