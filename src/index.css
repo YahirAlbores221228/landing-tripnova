@@ -6,16 +6,17 @@
     --font-lato: 'Lato', sans-serif;
 
     /* Colores TripNova */
-    --color-primary: #1E3A5F;
+    --color-primary: #0A2342;
     /* Azul profundo */
-    --color-secondary: #20B2AA;
+    --color-secondary: #718096;
     /* Turquesa */
     --color-accent: #FF6B35;
     /* Naranja */
     --color-white: #FFFFFF;
     /* Blanco */
-    --color-gray-light: #F5F7FA;
     /* Gris claro para fondos */
-    --color-text: #2D2D2D;
+    --color-text: #000000;
     /* Color de texto general */
 }
+
+/**151E3F

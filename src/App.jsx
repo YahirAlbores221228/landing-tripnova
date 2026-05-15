@@ -1,18 +1,25 @@
-
 import Header from "./sections/header"
 import Hero from "./sections/hero";
 import About from "./sections/about";
 import Packages from "./sections/packages";
+import Destinations from "./sections/Destinations";
+import Testimonials from "./sections/testimonials";
+import Faq from "./sections/faq";
+import Footer from "./sections/footer";
 
 function App() {
 
   return (
-    <div className=''>
+    <main className=''>
         <Header />
         <Hero />
         <About />
         <Packages />
-    </div>
+        <Destinations />
+        <Testimonials />
+        <Faq />
+        <Footer />
+    </main>
   )
 }
 
