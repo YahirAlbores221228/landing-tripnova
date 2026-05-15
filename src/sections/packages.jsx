@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import Tabs from "../components/tabs";
+import Tabs from "../components/Tabs";
 import packages from "../data/packages";
 import categories from "../data/categories";
-import PackageCard from "../components/packageCard";
+import PackageCard from "../components/PackageCard";
 
 const Packages = () => {
     const [activeTab, setActiveTab] = useState("all");

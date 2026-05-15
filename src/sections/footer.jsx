@@ -2,8 +2,8 @@ import contact from '../data/contact';
 import navlinks from '../data/navlinks';
 import sociallinks from '../data/sociallink';
 
-import SocialLinks from '../components/footer/sociallinks';
-import FooterColumn from '../components/footer/footercolumn';
+import SocialLinks from '../components/footer/Sociallinks';
+import FooterColumn from '../components/footer/Footercolumn';
 
 const Footer = () => {
     return (

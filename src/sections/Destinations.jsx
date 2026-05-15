@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-import Carousel from '../components/carousel';
+import Carousel from '../components/Carousel';
 import destinations from '../data/destinations';
-import DestinationCard from '../components/destinationCard';
+import DestinationCard from '../components/DestinationCard';
 
 const Destinations = () => {
     const ref = useRef(null)

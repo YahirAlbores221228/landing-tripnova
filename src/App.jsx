@@ -1,11 +1,11 @@
-import Header from "./sections/header"
-import Hero from "./sections/hero";
-import About from "./sections/about";
-import Packages from "./sections/packages";
+import Header from "./sections/Header"
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Packages from "./sections/Packages";
 import Destinations from "./sections/Destinations";
-import Testimonials from "./sections/testimonials";
-import Faq from "./sections/faq";
-import Footer from "./sections/footer";
+import Testimonials from "./sections/Testimonials";
+import Faq from "./sections/Faq";
+import Footer from "./sections/Footer";
 
 function App() {
 

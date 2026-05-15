@@ -1,6 +1,6 @@
 import features from "../data/features";
 import aboutimg from "../assets/hero/hero.jpg";
-import FeatureCard from "../components/featureCard";
+import FeatureCard from "../components/FeatureCard";
 
 const About = () => {
     return (

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import faqs from "../data/faqs";
-import AccordionItem from "../components/accordionItem";
+import AccordionItem from "../components/AccordionItem";
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(null);
