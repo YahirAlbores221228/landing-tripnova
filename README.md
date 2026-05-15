@@ -154,10 +154,32 @@ Se optó por una organización donde cada carpeta tiene un rol claro y definido:
 
 - **`sections/`** — contiene las secciones principales de la landing, cada una en su propio archivo
 - **`components/`** — contiene los componentes reutilizables que son utilizados por las secciones
+  - **`ui/`** — componentes genéricos de interfaz como `Button`, `Selector`, `Checkbox` y `RangeSlider`, reutilizables en cualquier parte del proyecto
 - **`data/`** — centraliza los datos estáticos en archivos separados, desacoplando la información de la UI
 - **`assets/`** — agrupa los recursos estáticos como imágenes y fuentes
 
 Esta estructura facilita entender rápidamente dónde vive cada parte del código, reduce el acoplamiento entre módulos y hace el proyecto más fácil de escalar y mantener a futuro.
+
+---
+
+### Cotizador dinámico
+
+Se implementó un **cotizador dinámico** como valor agregado para mejorar la experiencia del usuario dentro de la landing.
+
+La decisión de incluirlo se basó en que hoy en día el usuario busca facilidad y rapidez al momento de planear un viaje. Contar con una herramienta que le permita visualizar el costo estimado de su viaje en tiempo real, sin necesidad de contactar a un asesor, mejora significativamente la experiencia y genera mayor confianza hacia la agencia.
+
+**¿Cómo funciona?**
+
+El cotizador opera con una **lógica de cálculo matemático local**, sin necesidad de un backend o API externa. Los precios, destinos y paquetes están definidos en archivos de datos estáticos y mediante operaciones matemáticas se simula un presupuesto estimado del viaje.
+
+El usuario puede seleccionar:
+- **Destino o paquete** — determina el precio base del viaje
+- **Número de personas** — multiplica el costo por pasajero
+- **Duración del viaje** — ajusta el costo según los días seleccionados
+- **Tipo de viaje** — Básico, Estándar o Premium, cada uno con un multiplicador de precio
+- **Servicios adicionales** — opcionales que se suman al total
+
+El resultado se actualiza en **tiempo real** conforme el usuario realiza sus selecciones, mostrando un resumen detallado del presupuesto estimado sin necesidad de realizar ninguna operación manual.
 
 ---
 
@@ -179,22 +201,16 @@ Este enfoque permite mayor precisión al definir los estilos base en pantallas p
 
 ### Componentes reutilizables
 
-Se priorizó la construcción de **componentes reutilizables** como `PackagesCard`, `FeatureCard`, `DestinationCard`, `Tabs` y `Carousel`, con el objetivo de evitar duplicación de código y mejorar la mantenibilidad del proyecto.
+Se priorizó la construcción de **componentes reutilizables** con el objetivo de evitar duplicación de código y mejorar la mantenibilidad del proyecto.
+
+Se organizaron en dos niveles:
+
+- **Componentes de sección** — `PackagesCard`, `FeatureCard`, `DestinationCard`, `Tabs` y `Carousel`, utilizados dentro de las secciones principales de la landing
+- **Componentes UI** — `Button`, `Selector`, `Checkbox` y `RangeSlider`, componentes genéricos reutilizables utilizados principalmente en el cotizador
 
 Al crear un componente una sola vez y reutilizarlo con diferentes datos mediante props, se reduce el tiempo de desarrollo, se mantiene consistencia visual y se simplifica el mantenimiento — cualquier cambio en el componente se refleja automáticamente en todos los lugares donde se utiliza.
 
 ---
-
-## 📦 Librerías utilizadas
-
-| Librería | Versión | Uso |
-|----------|---------|-----|
-| **React** | 19 | Biblioteca principal para construcción de interfaces mediante componentes |
-| **Vite** | 6 | Herramienta de desarrollo y compilación rápida |
-| **Tailwind CSS** | 4 | Framework de estilos utility-first para diseño responsive |
-| **Framer Motion** | 12 | Animaciones modernas y fluidas en React |
-| **Lucide React** | latest | Íconos modernos y minimalistas como componentes React |
-| **React Icons** | latest | Colección adicional de íconos para complementar la interfaz |
 
 ## 📦 Librerías utilizadas
 
@@ -206,3 +222,33 @@ Al crear un componente una sola vez y reutilizarlo con diferentes datos mediante
 | **Framer Motion** | Permite crear animaciones modernas y fluidas integradas directamente en los componentes React |
 | **Lucide React** | Proporciona íconos modernos y minimalistas como componentes React, personalizables con props y clases de Tailwind |
 | **React Icons** | Complementa a Lucide React con una colección más amplia de íconos de diferentes librerías en un solo paquete |
+
+---
+
+## 🔧 ¿Qué mejoraría con más tiempo?
+
+- **Cotizador dinámico** — optimizar la lógica de cálculo para hacerla más precisa, con precios mejor definidos y una estructura de datos más robusta que refleje costos reales por destino, temporada y tipo de servicio.
+
+- **Carousel** — hacerlo más flexible y dinámico, agregando soporte para **arrastre con mouse y touch**, navegación en **loop continuo** para que el usuario pueda seguir avanzando sin necesidad de regresar al inicio, y ajustes más precisos de responsive.
+
+- **Animaciones** — profundizar en el uso de Framer Motion para agregar transiciones más elaboradas entre secciones y microinteracciones en elementos clave como botones, cards y el cotizador.
+
+- **Formulario de contacto** — integrar un formulario funcional que permita al usuario enviar consultas directamente desde la landing, idealmente conectado a un servicio de email como EmailJS o similar.
+
+- **Contenido e información** — refinar y enriquecer el contenido de cada sección para que refleje mejor la propuesta de valor de TripNova y genere mayor confianza en el usuario.
+  
+---
+
+## 🚀 Propuesta para siguiente fase
+
+TripNova en su estado actual representa una base sólida como landing page. Sin embargo, con el objetivo de convertirla en una plataforma completa de agencia de viajes, estas serían las mejoras que consideraría implementar en una siguiente fase:
+
+- **Sistema de reservas** — desarrollaría un flujo completo de reserva donde el usuario pueda seleccionar su paquete, elegir fechas disponibles y confirmar su viaje directamente desde la plataforma, reduciendo la necesidad de intermediación manual y mejorando la conversión.
+
+- **Autenticación de usuarios** — implementaría un sistema de registro e inicio de sesión que permita a cada usuario gestionar su perfil personal, guardar cotizaciones, consultar el historial de reservas y recibir recomendaciones personalizadas basadas en sus preferencias.
+
+- **Métodos de pago** — integraría una pasarela de pagos segura que permita al usuario completar la compra de su viaje directamente en la plataforma, eliminando fricciones en el proceso de conversión y brindando mayor confianza al cliente.
+
+- **Integración con APIs de proveedores** — conectaría APIs de aerolíneas y proveedores hoteleros para mostrar disponibilidad y precios en tiempo real, haciendo la experiencia más transparente, confiable y alineada con la oferta real del mercado.
+
+- **Simulación visual de ruta del viaje** — agregaría una visualización interactiva del itinerario de cada paquete, mostrando destinos, paradas, actividades y tiempos estimados de forma clara y atractiva, para que el usuario tenga una visión completa de su experiencia antes de reservar.
