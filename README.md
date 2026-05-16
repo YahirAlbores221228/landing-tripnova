@@ -87,7 +87,7 @@ Se evitó un diseño recargado o con exceso de elementos visuales, ya que en una
 Se buscó que al entrar a la landing el usuario percibiera TripNova como una plataforma tecnológica de viajes fácil de usar y visualmente atractiva. La combinación de una estética limpia con elementos dinámicos refleja innovación y aventura, generando una sensación de exploración desde el primer momento.
 
 **Uso de imágenes grandes e impactantes**
-En una plataforma de viajes el componente visual es fundamental para generar emoción e inspiración. Las imágenes grandes comunican el concepto de exploración de manera inmediata y emocional, aportando mayor inmersión visual y conectando al usuario con la experiencia de viajar desde el primer instante.
+En el mundo de los viajes, la imagen lo es todo. Las fotografías grandes y de alta calidad comunican de forma inmediata lo que las palabras no siempre logran — la emoción de descubrir un nuevo lugar. Esta decisión fue clave para conectar al usuario con la experiencia de viajar desde el primer instante.
  
  ----
  
@@ -99,10 +99,11 @@ El orden de las secciones fue diseñado pensando en el **flujo de atención y co
 - **Sobre nosotros** — responde la primera pregunta del usuario: ¿quién es esta empresa y puedo confiar en ella?
 - **Paquetes** — una vez generada la confianza, se le muestra directamente lo que está buscando
 - **Destinos** — complementa los paquetes con destinos destacados para inspirar al usuario
+- **Cotizador** — permite al usuario calcular el costo estimado de su viaje en tiempo real, facilitando la toma de decisión sin necesidad de contactar a un asesor
 - **Testimonios** — refuerza la confianza con experiencias reales de otros viajeros
 - **FAQ** — resuelve dudas frecuentes antes de que el usuario abandone la página
 
-El objetivo fue construir una navegación natural y fácil de escanear, priorizando primero atracción visual, luego información y confianza, y finalmente resolución de dudas para llevar al usuario hacia una acción.
+El objetivo fue construir una navegación natural y fácil de escanear, priorizando primero atracción visual, luego información y confianza, y finalmente herramientas que faciliten la decisión del usuario.
 
 ## 🛠️ Decisiones técnicas
 
