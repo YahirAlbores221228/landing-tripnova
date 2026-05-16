@@ -1,25 +1,24 @@
-export const listResumen = ({ destinoLabel, personas, duracion, tipoViajeLabel }) => {
+export const listResumen = ({ destinationLabel, people, duration, tripTravelLabel }) => {
   return [
     { 
       id: 'destino', 
       label: 'Destino', 
-      value: destinoLabel || 'No seleccionado', 
-      extraClass: 'text-right max-w-[160px] truncate' 
+      value: destinationLabel || 'No seleccionado', 
     },
     { 
       id: 'pasajeros', 
       label: 'Pasajeros', 
-      value: `${personas} ${personas === 1 ? 'persona' : 'personas'}` 
+      value: `${people} ${people === 1 ? 'persona' : 'personas'}` 
     },
     { 
       id: 'estadia', 
       label: 'Estadía', 
-      value: `${duracion} ${duracion === 1 ? 'día' : 'días'}` 
+      value: `${duration} ${duration === 1 ? 'día' : 'días'}` 
     },
-    ...(tipoViajeLabel ? [{ 
+    ...(tripTravelLabel ? [{ 
       id: 'categoria', 
       label: 'Categoría', 
-      value: tipoViajeLabel 
+      value: tripTravelLabel 
     }] : [])
   ];
 };

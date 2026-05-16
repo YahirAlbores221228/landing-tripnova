@@ -13,7 +13,7 @@ const CheckBoxCards = ({
 
     onChange({
       target: {
-        name: 'serviciosExtra',
+        name: 'extraServices',
         value: newValue
       }
     });

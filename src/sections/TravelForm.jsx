@@ -13,43 +13,43 @@ const TravelForm = ({
             <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
                 <SelectField
                     label="Destino o paquete"
-                    name="destino"
-                    value={formData.destino}
+                    name="destination"
+                    value={formData.destination}
                     onChange={onInputChange}
-                    options={data.destinos}
+                    options={data.destinations}
                     placeholder="Selecciona hacia dónde viajas"
                     required
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-2">
                     <RangeSlider
                         label="Personas"
-                        name="personas"
+                        name="people"
                         min={1}
                         max={10}
                         unit=""
-                        value={formData.personas}
+                        value={formData.people}
                         onChange={onInputChange}
                     />
                     <RangeSlider
                         label="Duración"
-                        name="duracion"
+                        name="duration"
                         min={1}
                         max={30}
                         unit="días"
-                        value={formData.duracion}
+                        value={formData.duration}
                         onChange={onInputChange}
                     />
                 </div>
                 <RadioCards
                     label="Tipo de viaje"
-                    name="tipoViaje"
-                    value={formData.tipoViaje}
+                    name="tripType"
+                    value={formData.tripType}
                     onChange={onInputChange}
-                    options={data.tiposViaje}
+                    options={data.tripTravels}
                 />
                 <CheckBoxCards
-                    options={data.serviciosAdicionales}
-                    value={formData.serviciosExtra}
+                    options={data.extrasServices}
+                    value={formData.extraServices}
                     onChange={onInputChange}
                 />
             </form>

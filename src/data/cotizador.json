@@ -1,5 +1,5 @@
 {
-  "destinos": [
+  "destinations": [
     {
       "value": "cancun",
       "label": "Cancún, México",
@@ -21,7 +21,7 @@
       "precioBase": 900
     }
   ],
-  "tiposViaje": [
+  "tripTravels": [
     {
       "value": "basico",
       "label": "Básico",
@@ -41,7 +41,7 @@
       "features": ["Hospedaje 5★", "Pensión completa", "Experiencias exclusivas"]
     }
   ],
-  "serviciosAdicionales": [
+  "extrasServices": [
     {
       "value": "traslado",
       "label": "Traslado aeropuerto-hotel",

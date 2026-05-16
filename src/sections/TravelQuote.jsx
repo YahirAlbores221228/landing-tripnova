@@ -5,8 +5,8 @@ import { useCotizador } from '../hooks/useCotizador';
 const TravelQuote = () => {
   const { formData, handleInputChange, total, data } = useCotizador();
 
-  const destinoLabel = data.destinos.find(d => d.value === formData.destino)?.label || '';
-  const tipoViajeLabel = data.tiposViaje.find(t => t.value === formData.tipoViaje)?.label || '';
+  const destinationLabel = data.destinations.find(d => d.value === formData.destination)?.label || '';
+  const tripTravelLabel = data.tripTravels.find(t => t.value === formData.tripType)?.label || '';
 
   return (
     <section id='quote' className='py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-white'>
@@ -33,10 +33,10 @@ const TravelQuote = () => {
           <div className='lg:col-span-1'>
             <QuoteResult
               total={total}
-              personas={formData.personas}
-              duracion={formData.duracion}
-              destinoLabel={destinoLabel}
-              tipoViajeLabel={tipoViajeLabel}
+              people={formData.people}
+              duration={formData.duration}
+              destinationLabel={destinationLabel}
+              tripTravelLabel={tripTravelLabel}
             />
           </div>
         </div>
