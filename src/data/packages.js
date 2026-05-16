@@ -96,6 +96,6 @@ const packages = [
     rating: 4.5,
     image: cdmx
   },
-]
+];
 
 export default packages;

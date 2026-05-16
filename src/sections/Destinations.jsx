@@ -12,7 +12,7 @@ const Destinations = () => {
     const scrollNext = () => ref.current.scrollBy({ left: 300, behavior: 'smooth' })
 
     return (
-        <section id='destinos' className='py-16 md:py-24 lg:py-32 px-4 md:px-8 bg-white overflow-hidden'>
+        <section id='destinations' className='py-16 md:py-24 lg:py-32 px-4 md:px-8 bg-white overflow-hidden'>
             <div className='max-w-7xl mx-auto mb-10'>
                 <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
                     <div className='flex flex-col gap-2'>

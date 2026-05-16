@@ -5,18 +5,14 @@
     --font-poppins: 'Poppins', sans-serif;
     --font-lato: 'Lato', sans-serif;
 
-    /* Colores TripNova */
     --color-primary: #0A2342;
-    /* Azul profundo */
     --color-secondary: #718096;
-    /* Turquesa */
     --color-accent: #FF6B35;
-    /* Naranja */
-    --color-white: #FFFFFF;
-    /* Blanco */
-    /* Gris claro para fondos */
-    --color-text: #000000;
-    /* Color de texto general */
 }
 
-/**151E3F
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 4rem; /* Ajusta este valor según la altura de tu navbar */
+    }
+}

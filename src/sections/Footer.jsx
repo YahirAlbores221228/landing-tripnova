@@ -1,13 +1,12 @@
 import contact from '../data/contact';
 import navlinks from '../data/navlinks';
 import sociallinks from '../data/sociallink';
-
 import SocialLinks from '../components/footer/Sociallinks';
 import FooterColumn from '../components/footer/Footercolumn';
 
 const Footer = () => {
     return (
-        <footer className="bg-primary text-gray-300">
+        <footer className="bg-primary text-gray-200">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
                     <FooterColumn title="Contacto">
@@ -22,7 +21,7 @@ const Footer = () => {
                     </FooterColumn>
                     <FooterColumn title="Ubicación">
                         <div className='flex items-start gap-3 text-sm md:text-base'>
-                          <p>Tuxtla Gutierrez, Chiapas, México</p>
+                            <p>Tuxtla Gutierrez, Chiapas, México</p>
                         </div>
                     </FooterColumn>
                     <FooterColumn title="Enlaces">
@@ -55,6 +54,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-}
+};
 
 export default Footer;

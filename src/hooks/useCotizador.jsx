@@ -3,21 +3,21 @@ import { useState, useMemo, useEffect } from 'react';
 import cotizadorData from '../data/cotizador.json';
 
 const INITIAL_STATE = {
-  destino: '',
-  personas: 1,
-  duracion: 1,
-  tipoViaje: 'basico',
-  serviciosExtra: []
+  destination: '',
+  people: 1,
+  duration: 1,
+  tripType: 'basic',
+  extraServices: []
 };
 
 export const useCotizador = () => {
   const [formData, setFormData] = useState(() => {
-    const saved = localStorage.getItem('cotizacion_viaje');
+    const saved = localStorage.getItem('trip_quote');
     return saved ? JSON.parse(saved) : INITIAL_STATE;
   });
 
   useEffect(() => {
-    localStorage.setItem('cotizacion_viaje', JSON.stringify(formData));
+    localStorage.setItem('trip_quote', JSON.stringify(formData));
   }, [formData]);
 
   const handleInputChange = (e) => {
@@ -26,25 +26,25 @@ export const useCotizador = () => {
   };
 
   const total = useMemo(() => {
-    if (!formData.destino) return 0;
+    if (!formData.destination) return 0;
 
-    const destinoSelected = cotizadorData.destinos.find(d => d.value === formData.destino);
-    if (!destinoSelected) return 0;
+    const selectedDestination = cotizadorData.destinos.find(d => d.value === formData.destination);
+    if (!selectedDestination) return 0;
 
-    let precioBase = destinoSelected.precioBase;
+    let basePrice = selectedDestination.precioBase;
 
-    const tipoSelected = cotizadorData.tiposViaje.find(t => t.value === formData.tipoViaje);
-    const multiplicador = tipoSelected ? tipoSelected.multiplicador : 1;
+    const selectedType = cotizadorData.tiposViaje.find(t => t.value === formData.tripType);
+    const multiplier = selectedType ? selectedType.multiplicador : 1;
 
-    let precioServicios = 0;
-    formData.serviciosExtra.forEach(srv => {
-      const servicio = cotizadorData.serviciosAdicionales.find(s => s.value === srv);
-      if (servicio) precioServicios += servicio.precio;
+    let servicesPrice = 0;
+    formData.extraServices.forEach(srv => {
+      const service = cotizadorData.serviciosAdicionales.find(s => s.value === srv);
+      if (service) servicesPrice += service.precio;
     });
 
-    const precioDiasExtra = (formData.duracion - 1) * cotizadorData.configuracionGeneral.precioDiaExtra;
+    const extraDaysPrice = (formData.duration - 1) * cotizadorData.configuracionGeneral.precioDiaExtra;
 
-    return ((precioBase * multiplicador) + precioServicios + precioDiasExtra) * formData.personas;
+    return ((basePrice * multiplier) + servicesPrice + extraDaysPrice) * formData.people;
   }, [formData]);
 
   return {

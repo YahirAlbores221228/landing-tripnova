@@ -4,6 +4,6 @@ const categories = [
   { id: 3, label: "Cultura", value: "cultura" },
   { id: 4, label: "Aventura", value: "aventura" },
   { id: 5, label: "Familiar", value: "familiar" },
-]
+];
 
-export default categories
+export default categories;

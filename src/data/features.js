@@ -25,6 +25,6 @@ const features = [
     description: "Cada paquete se ajusta a tu estilo, tiempo y presupuesto.",
     icon: Sparkles
   },
-]
+];
 
-export default features
+export default features;
