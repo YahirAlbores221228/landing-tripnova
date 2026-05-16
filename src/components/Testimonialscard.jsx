@@ -1,13 +1,21 @@
 import { Quote, Star } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const TestimonialsCard = ({
+    index,
     name,
     destination,
     rating,
     text
 }) => {
     return (
-        <article className="bg-white p-5 md:p-6 flex flex-col rounded-2xl shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
+        <motion.article
+            key={index}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.08 }}
+            className="bg-white p-5 md:p-6 flex flex-col rounded-2xl shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
             <Quote className="w-5 h-5 md:w-6 md:h-6 text-accent" />
             <blockquote className="mt-3 text-base text-secondary leading-relaxed flex-1">
                 "{text}"
@@ -23,7 +31,7 @@ const TestimonialsCard = ({
                 <h3 className="text-base md:text-lg font-semibold text-primary font-poppins">{name}</h3>
                 <p className="text-sm font-medium font-lato text-secondary mt-0.5">{destination}</p>
             </figcaption>
-        </article>
+        </motion.article>
     );
 }
 
